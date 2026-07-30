@@ -1,0 +1,17 @@
+/* 
+ * File:   external_eeprom.h
+ * Author: Poomani Krishna
+ *
+ * Created on 29 April, 2026, 10:20 PM
+ */
+
+#ifndef EXTERNAL_EEPROM_H
+#define	EXTERNAL_EEPROM_H
+
+#define SLAVE_READ_E		0xA1
+#define SLAVE_WRITE_E		0xA0
+
+void write_external_eeprom(unsigned char address, unsigned char data);
+unsigned char read_external_eeprom(unsigned char address);
+#endif	/* EXTERNAL_EEPROM_H */
+
